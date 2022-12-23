@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meller shop</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="null.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__flex">
+            <a href="index.html" class="header__logo"></a>
+            <a href="index.html" class="header__title">Meller Shop</a>
+        </div>
+        <div class="header__flex">
+            <a href="html/size.html" class="header__size">Size Selection</a>
+            <a href="html/faq.html" class="header__faq">FAQ</a>
+        </div>
+        <div class="header__burger">
+            <span></span>
+        </div>
+    </header>
+    <nav class="nav">
+        <div class="nav__list">
+            <button id="all" class="nav__list-btn active">All</button>
+            <button id="hoodies" class="nav__list-btn">Hoodies</button>
+            <button id="t-shirts" class="nav__list-btn">T-Shirts</button>
+            <button id="accessories" class="nav__list-btn">Accessories</button>
+            <button id="pants" class="nav__list-btn">Pants</button>
+            <button id="coats" class="nav__list-btn">Coats</button>
+            <button id="jersies" class="nav__list-btn">Jersies</button>
+            <button id="other" class="nav__list-btn">Other stuff</button>
+        </div>
+        <div class="nav__buttons">
+            <div class="input">
+                <input type="text" placeholder="Search">
+                <div class="search"></div>
+            </div>
+            <div class="sorting">
+                <div class="sorting__active">Sorting: Common</div>
+                <ul>
+                    <li id="stock" class="sorting__item">In Stock first</li>
+                    <li id="common" class="sorting__item active">Sorting: Common</li>
+                    <li id="priceh" class="sorting__item">Price: High to Low</li>
+                    <li id="pricel" class="sorting__item">Price: Low to High</li>
+                    <li id="namea" class="sorting__item">Name: A-Z</li>
+                    <li id="namez" class="sorting__item">Name: Z-A</li>
+                    <!-- <li id="new" class="sorting__item">Sorting: New first</li>
+                    <li id="old" class="sorting__item">Sorting: Old first</li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="main">
+        <a href="html/1.html" class="main__card" data-price="250" data-stock="1" data-title="Sweatshirt freak pink"
+            data-id="1" data-type="hoodies">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/hoodies/1.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Sweatshirt freak pink</div>
+                <div class="main__card-description">oversized and not a freak at all</div>
+                <div class="main__card-price">$250</div>
+            </div>
+        </a>
+        <a href="html/3.html" class="main__card" data-price="300" data-stock="0" data-title="Warm Hoodie" data-id="3"
+            data-type="hoodies">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/hoodies/3.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Warm Hoodie</div>
+                <div class="main__card-description">warm and pleasant</div>
+                <div class="main__card-price">$300</div>
+            </div>
+        </a>
+        <a href="html/18.html" class="main__card" data-price="125" data-stock="1" data-title="Nike Repel UV Windrunner"
+            data-id="18" data-type="coats">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/coats/9.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Nike Repel UV Windrunner</div>
+                <div class="main__card-description">Men’s Running Jacket</div>
+                <div class="main__card-price">$125</div>
+            </div>
+        </a>
+        <a href="html/19.html" class="main__card" data-price="135" data-stock="1" data-title="Nike Therma-FIT Repel"
+            data-id="19" data-type="coats">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/coats/10.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Nike Therma-FIT Repel</div>
+                <div class="main__card-description">Men’s Synthetic-Fill Running Jacket</div>
+                <div class="main__card-price">$135</div>
+            </div>
+        </a>
+        <a href="html/4.html" class="main__card" data-price="320" data-stock="1" data-title="Thick cotton hoodie"
+            data-id="4" data-type="hoodies">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/hoodies/4.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Thick cotton hoodie</div>
+                <div class="main__card-description">very dense and immortal</div>
+                <div class="main__card-price">$320</div>
+            </div>
+        </a>
+        <a href="html/6.html" class="main__card" data-price="100" data-stock="1"
+            data-title="Converse x Pokémon 25th Celebration Hoodie" data-id="6" data-type="hoodies">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/hoodies/6.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Converse x Pokémon 25th Celebration Hoodie</div>
+                <div class="main__card-description">Hoodie with Pokemon</div>
+                <div class="main__card-price">$100</div>
+            </div>
+        </a>
+        <a href="html/15.html" class="main__card" data-price="240" data-stock="1"
+            data-title="Nike Sportswear Therma-FIT Windrunner" data-id="15" data-type="coats">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/coats/6.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Nike Sportswear Therma-FIT Windrunner</div>
+                <div class="main__card-description">Men’s Insulated Hooded Camo Jacket</div>
+                <div class="main__card-price">$240</div>
+            </div>
+        </a>
+        <a href="html/17.html" class="main__card" data-price="100" data-stock="1"
+            data-title="Nike Sportswear Windrunner" data-id="17" data-type="coats">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/coats/8.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Nike Sportswear Windrunner</div>
+                <div class="main__card-description">Men’s Hooded Jacket</div>
+                <div class="main__card-price">$100</div>
+            </div>
+        </a>
+        <a href="html/10.html" class="main__card" data-price="500" data-stock="1" data-title="Jackets with patches"
+            data-id="10" data-type="coats">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/coats/1.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Jackets with patches</div>
+                <div class="main__card-description">The wildes jacket in the world</div>
+                <div class="main__card-price">$500</div>
+            </div>
+        </a>
+        <a href="html/8.html" class="main__card" data-price="140" data-stock="1"
+            data-title="Converse x Todd Snyder Plaid PO Crew" data-id="8" data-type="hoodies">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/hoodies/10.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Converse x Todd Snyder Plaid PO Crew</div>
+                <div class="main__card-description">Triangle hoodie</div>
+                <div class="main__card-price">$140</div>
+            </div>
+        </a>
+        <a href="html/9.html" class="main__card" data-price="130" data-stock="1"
+            data-title="Converse x Todd Snyder Plaid PO Hoodie" data-id="9" data-type="hoodies">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/hoodies/9.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Converse x Todd Snyder Plaid PO Hoodie</div>
+                <div class="main__card-description">Fleece crew</div>
+                <div class="main__card-price">$130</div>
+            </div>
+        </a>
+        <a href="html/11.html" class="main__card" data-price="140" data-stock="1" data-title="Nike Storm-FIT Windrunner"
+            data-id="11" data-type="coats">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/coats/2.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Nike Storm-FIT Windrunner</div>
+                <div class="main__card-description">Men’s PRIMALOFT Illustrated Vest</div>
+                <div class="main__card-price">$140</div>
+            </div>
+        </a>
+        <a href="html/12.html" class="main__card" data-price="170" data-stock="1"
+            data-title="Nike Sportswear Storm-FIT Windrunner" data-id="12" data-type="coats">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/coats/3.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Nike Sportswear Storm-FIT Windrunner</div>
+                <div class="main__card-description">Men’s PRIMALOFT Jacket</div>
+                <div class="main__card-price">$170</div>
+            </div>
+        </a>
+        <a href="html/13.html" class="main__card" data-price="180" data-stock="1"
+            data-title="Nike Sportswear Therma-FIT Legacy" data-id="13" data-type="coats">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/coats/4.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Nike Sportswear Therma-FIT Legacy</div>
+                <div class="main__card-description">Men’s Hooded Jacket</div>
+                <div class="main__card-price">$180</div>
+            </div>
+        </a>
+        <a href="html/5.html" class="main__card" data-price="300" data-stock="0" data-title="Oversize hoodie"
+            data-id="5" data-type="hoodies">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/hoodies/5.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Oversize hoodie</div>
+                <div class="main__card-description">free and light</div>
+                <div class="main__card-price">$300</div>
+            </div>
+        </a>
+        <a href="html/14.html" class="main__card" data-price="250" data-stock="1" data-title="Jordan Flight Heritage"
+            data-id="14" data-type="coats">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/coats/5.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Jordan Flight Heritage</div>
+                <div class="main__card-description">Men’s Liner Jacket</div>
+                <div class="main__card-price">$250</div>
+            </div>
+        </a>
+        <a href="html/7.html" class="main__card" data-price="160" data-stock="1"
+            data-title="Converse x Josh Vides Utility Fleece Hoodie" data-id="7" data-type="hoodies">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/hoodies/7.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Converse x Josh Vides Utility Fleece Hoodie</div>
+                <div class="main__card-description">Fleece hoodie</div>
+                <div class="main__card-price">$160</div>
+            </div>
+        </a>
+        <a href="html/24.html" class="main__card" data-price="45" data-stock="1" data-title="Nike" data-id="24"
+            data-type="t-shirts">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/t-shirts/5.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Nike</div>
+                <div class="main__card-description">T-Shirt</div>
+                <div class="main__card-price">$45</div>
+            </div>
+        </a>
+        <a href="html/20.html" class="main__card" data-price="70" data-stock="1" data-title="Just T-shirt" data-id="20"
+            data-type="t-shirts">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/t-shirts/1.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Just T-shirt</div>
+                <div class="main__card-description">Just white t-shirt</div>
+                <div class="main__card-price">$70</div>
+            </div>
+        </a>
+        <a href="html/21.html" class="main__card" data-price="70" data-stock="1" data-title="Just T-shirt" data-id="21"
+            data-type="t-shirts">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/t-shirts/2.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Just T-shirt</div>
+                <div class="main__card-description">Just black t-shirt</div>
+                <div class="main__card-price">$70</div>
+            </div>
+        </a>
+        <a href="html/22.html" class="main__card" data-price="130" data-stock="1" data-title="OverSized T-shirt"
+            data-id="22" data-type="t-shirts">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/t-shirts/3.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">OverSized T-shirt</div>
+                <div class="main__card-description">Oversized t-shirt in thick cotton</div>
+                <div class="main__card-price">$130</div>
+            </div>
+        </a>
+        <a href="html/23.html" class="main__card" data-price="55" data-stock="1" data-title="Nike Sportswear"
+            data-id="23" data-type="t-shirts">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/t-shirts/4.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Nike Sportswear</div>
+                <div class="main__card-description">Men’s Max90 T-Shirt</div>
+                <div class="main__card-price">$55</div>
+            </div>
+        </a>
+        <a href="html/25.html" class="main__card" data-price="25" data-stock="1" data-title="Nike Sportswear Club"
+            data-id="25" data-type="t-shirts">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/t-shirts/6.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Nike Sportswear Club</div>
+                <div class="main__card-description">Men’s T-Shirt</div>
+                <div class="main__card-price">$25</div>
+            </div>
+        </a>
+        <a href="html/2.html" class="main__card" data-price="250" data-stock="1" data-title="Sweatshirt freak green"
+            data-id="2" data-type="hoodies">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/hoodies/2.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Sweatshirt freak green</div>
+                <div class="main__card-description">oversized and not a freak at all</div>
+                <div class="main__card-price">$250</div>
+            </div>
+        </a>
+        <a href="html/16.html" class="main__card" data-price="160" data-stock="1"
+            data-title="Nike Sportswear Storm-FIT Legacy" data-id="16" data-type="coats">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/coats/7.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Nike Sportswear Storm-FIT Legacy</div>
+                <div class="main__card-description">Men’s Hooded Shell Jacket</div>
+                <div class="main__card-price">$160</div>
+            </div>
+        </a>
+        <a href="html/26.html" class="main__card" data-price="30" data-stock="1" data-title="Nike Sportswear"
+            data-id="26" data-type="t-shirts">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/t-shirts/7.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Nike Sportswear</div>
+                <div class="main__card-description">Men’s Long-Sleeve T-Shirt</div>
+                <div class="main__card-price">$30</div>
+            </div>
+        </a>
+        <a href="html/27.html" class="main__card" data-price="85" data-stock="1" data-title="U.S." data-id="27"
+            data-type="t-shirts">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/t-shirts/8.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">U.S.</div>
+                <div class="main__card-description">Men’s Nike Dri-FIT Baseball T-Shirt</div>
+                <div class="main__card-price">$85</div>
+            </div>
+        </a>
+        <a href="html/28.html" class="main__card" data-price="25" data-stock="1" data-title="Nike Sportswear Swoosh"
+            data-id="28" data-type="t-shirts">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/t-shirts/9.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Nike Sportswear Swoosh</div>
+                <div class="main__card-description">Men’s T-Shirt</div>
+                <div class="main__card-price">$25</div>
+            </div>
+        </a>
+        <a href="html/29.html" class="main__card" data-price="25" data-stock="1"
+            data-title="Nike Sportswear Premium Essentials" data-id="29" data-type="t-shirts">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/t-shirts/10.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Nike Sportswear Premium Essentials</div>
+                <div class="main__card-description">Men’s T-Shirt</div>
+                <div class="main__card-price">$25</div>
+            </div>
+        </a>
+        <a href="html/30.html" class="main__card" data-price="80" data-stock="1" data-title="jersies Original"
+            data-id="30" data-type="jersies">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/jersies/1.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Jersies Original</div>
+                <div class="main__card-description">Hockey jersies</div>
+                <div class="main__card-price">$80</div>
+            </div>
+        </a>
+        <a href="html/31.html" class="main__card" data-price="80" data-stock="1" data-title="jersies Tiger" data-id="31"
+            data-type="jersies">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/jersies/2.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Jersies Tiger</div>
+                <div class="main__card-description">Tight jersies in toxic brindle</div>
+                <div class="main__card-price">$80</div>
+            </div>
+        </a>
+        <a href="html/32.html" class="main__card" data-price="80" data-stock="1" data-title="jersies Cow" data-id="32"
+            data-type="jersies">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/jersies/3.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Jersies Cow</div>
+                <div class="main__card-description">Cow styled. Just because we can</div>
+                <div class="main__card-price">$80</div>
+            </div>
+        </a>
+        <a href="html/33.html" class="main__card" data-price="80" data-stock="1" data-title="jersies Yogurt"
+            data-id="33" data-type="jersies">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/jersies/4.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Jersies Yogurt</div>
+                <div class="main__card-description">Best seller in jersies. Just look at it</div>
+                <div class="main__card-price">$80</div>
+            </div>
+        </a>
+        <a href="html/34.html" class="main__card" data-price="80" data-stock="1" data-title="jersies Black" data-id="34"
+            data-type="jersies">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/jersies/5.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Jersies Black</div>
+                <div class="main__card-description">Need a classic? The black one is here</div>
+                <div class="main__card-price">$80</div>
+            </div>
+        </a>
+        <a href="html/35.html" class="main__card" data-price="50" data-stock="1" data-title="Los Angeles jersies"
+            data-id="35" data-type="jersies">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/jersies/6.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Los Angeles jersies</div>
+                <div class="main__card-description">1984 Home Swingman jersies</div>
+                <div class="main__card-price">$50</div>
+            </div>
+        </a>
+        <a href="html/36.html" class="main__card" data-price="37" data-stock="1" data-title="OuterStuff Kids jersies"
+            data-id="36" data-type="jersies">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/jersies/7.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">OuterStuff Kids jersies</div>
+                <div class="main__card-description">FIFA Word Cup jersies</div>
+                <div class="main__card-price">$37</div>
+            </div>
+        </a>
+        <a href="html/37.html" class="main__card" data-price="90" data-stock="1" data-title="Franklin Sports NFL Kids"
+            data-id="37" data-type="jersies">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/jersies/8.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Franklin Sports NFL Kids</div>
+                <div class="main__card-description">Football set - helmet,costume</div>
+                <div class="main__card-price">$90</div>
+            </div>
+        </a>
+        <a href="html/49.html" class="main__card" data-price="9" data-stock="1" data-title="Shopper OG" data-id="49"
+            data-type="accessories">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/accessories/3.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Shopper OG</div>
+                <div class="main__card-description">Shopper with print</div>
+                <div class="main__card-price">$9</div>
+            </div>
+        </a>
+        <a href="html/38.html" class="main__card" data-price="90" data-stock="1" data-title="Joggers Camo" data-id="38"
+            data-type="pants">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/pants/1.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Joggers Camo</div>
+                <div class="main__card-description">Classic camo joggers</div>
+                <div class="main__card-price">$90</div>
+            </div>
+        </a>
+        <a href="html/39.html" class="main__card" data-price="120" data-stock="1" data-title="pants parachutes orange"
+            data-id="39" data-type="pants">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/pants/2.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Pants parachutes orange</div>
+                <div class="main__card-description">Wide leg pants with large pockets and webbing</div>
+                <div class="main__card-price">$120</div>
+            </div>
+        </a>
+        <a href="html/40.html" class="main__card" data-price="120" data-stock="1" data-title="pants parachutes khaki"
+            data-id="40" data-type="pants">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/pants/3.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Pants parachutes khaki</div>
+                <div class="main__card-description">Wide leg pants with large pockets and webbing</div>
+                <div class="main__card-price">$120</div>
+            </div>
+        </a>
+        <a href="html/41.html" class="main__card" data-price="65" data-stock="1" data-title="Sport pants " data-id="41"
+            data-type="pants">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/pants/4.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Sport pants </div>
+                <div class="main__card-description">Daily sport pants</div>
+                <div class="main__card-price">$65</div>
+            </div>
+        </a>
+        <a href="html/50.html" class="main__card" data-price="30" data-stock="1" data-title="OG Chain lock" data-id="50"
+            data-type="accessories">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/accessories/4.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">OG Chain lock</div>
+                <div class="main__card-description">Stainless steel on your neck</div>
+                <div class="main__card-price">$30</div>
+            </div>
+        </a>
+        <a href="html/52.html" class="main__card" data-price="55" data-stock="1" data-title="Gift Certificate"
+            data-id="52" data-type="accessories">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/accessories/6.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Gift Certificate</div>
+                <div class="main__card-description">+Used studio paint bottle as physical certificate +Electronic
+                    certificate</div>
+                <div class="main__card-price">$55</div>
+            </div>
+        </a>
+        <a href="html/42.html" class="main__card" data-price="65" data-stock="1" data-title="Warm pants" data-id="42"
+            data-type="pants">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/pants/5.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Warm pants</div>
+                <div class="main__card-description">Daily warm pants</div>
+                <div class="main__card-price">$65</div>
+            </div>
+        </a>
+        <a href="html/43.html" class="main__card" data-price="45" data-stock="1"
+            data-title="Nike Sportswear Club Fleece" data-id="43" data-type="pants">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/pants/6.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Nike Sportswear Club Fleece</div>
+                <div class="main__card-description">Men pants</div>
+                <div class="main__card-price">$45</div>
+            </div>
+        </a>
+        <a href="html/51.html" class="main__card" data-price="40" data-stock="1" data-title="Panamka" data-id="51"
+            data-type="accessories">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/accessories/5.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Panamka</div>
+                <div class="main__card-description">Dalmatian fur</div>
+                <div class="main__card-price">$40</div>
+            </div>
+        </a>
+        <a href="html/44.html" class="main__card" data-price="60" data-stock="1" data-title="Nike Dri-FIT" data-id="44"
+            data-type="pants">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/pants/7.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Nike Dri-FIT</div>
+                <div class="main__card-description">Men’s Tapered Training pants</div>
+                <div class="main__card-price">$60</div>
+            </div>
+        </a>
+        <a href="html/45.html" class="main__card" data-price="110" data-stock="1"
+            data-title="Nike sportswear Tech Fleece" data-id="45" data-type="pants">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/pants/8.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Nike sportswear Tech Fleece</div>
+                <div class="main__card-description">Men’s Joggers</div>
+                <div class="main__card-price">$110</div>
+            </div>
+        </a>
+        <a href="html/46.html" class="main__card" data-price="60" data-stock="1" data-title="Nike Dri-FIT" data-id="46"
+            data-type="pants">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/pants/9.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Nike Dri-FIT</div>
+                <div class="main__card-description">Men’s Training pants</div>
+                <div class="main__card-price">$60</div>
+            </div>
+        </a>
+        <a href="html/47.html" class="main__card" data-price="20" data-stock="1" data-title="Men’s trunks" data-id="47"
+            data-type="accessories">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/accessories/1.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Men’s trunks</div>
+                <div class="main__card-description">The best trunks in your life</div>
+                <div class="main__card-price">$20</div>
+            </div>
+        </a>
+        <a href="html/48.html" class="main__card" data-price="18" data-stock="1" data-title="Women trunks" data-id="48"
+            data-type="accessories">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/accessories/2.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Women trunks</div>
+                <div class="main__card-description">High thongs</div>
+                <div class="main__card-price">$18</div>
+            </div>
+        </a>
+        <a href="html/53.html" class="main__card" data-price="25" data-stock="1" data-title="Nike Streak" data-id="53"
+            data-type="accessories">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/accessories/7.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Nike Streak</div>
+                <div class="main__card-description">Volleyball Knee Pads</div>
+                <div class="main__card-price">$25</div>
+            </div>
+        </a>
+        <a href="html/54.html" class="main__card" data-price="32" data-stock="1" data-title="Nike Therma-FIT Academy"
+            data-id="54" data-type="accessories">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/accessories/8.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Nike Therma-FIT Academy</div>
+                <div class="main__card-description">Soccer Glover</div>
+                <div class="main__card-price">$32</div>
+            </div>
+        </a>
+        <a href="html/55.html" class="main__card" data-price="24" data-stock="1" data-title="Nike Tour Classic 4"
+            data-id="55" data-type="accessories">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/accessories/9.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Nike Tour Classic 4</div>
+                <div class="main__card-description">Men’s Golf Glove (Left Regular)</div>
+                <div class="main__card-price">$24</div>
+            </div>
+        </a>
+        <a href="html/56.html" class="main__card" data-price="16" data-stock="1" data-title="Nike" data-id="56"
+            data-type="accessories">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/accessories/10.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Nike</div>
+                <div class="main__card-description">Headbands (6-Pack)</div>
+                <div class="main__card-price">$16</div>
+            </div>
+        </a>
+        <a href="html/57.html" class="main__card" data-price="119" data-stock="1" data-title="Nike Transform"
+            data-id="57" data-type="accessories">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/accessories/11.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Nike Transform</div>
+                <div class="main__card-description">Packable Runnings Vest</div>
+                <div class="main__card-price">$119</div>
+            </div>
+        </a>
+        <a href="html/58.html" class="main__card" data-price="30" data-stock="1" data-title="Nike Premium" data-id="58"
+            data-type="accessories">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/accessories/12.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title">Nike Premium</div>
+                <div class="main__card-description">Men’s Training Gloves</div>
+                <div class="main__card-price">$30</div>
+            </div>
+        </a>
+        <a href="html/60.html" class="main__card" data-price="30" data-stock="1" data-title="Your Portrait" data-id="60"
+            data-type="other">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/other/1.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title"> Your Portrait </div>
+                <div class="main__card-description"> Le Chert style </div>
+                <div class="main__card-price"> $30 </div>
+            </div>
+        </a>
+        <a href="html/59.html" class="main__card" data-price="30" data-stock="1" data-title="Donation for hangar "
+            data-id="61" data-type="other">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/other/2.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title"> Donation for hangar </div>
+                <div class="main__card-description"> Help us to move to hangar </div>
+                <div class="main__card-price"> $30 </div>
+            </div>
+        </a>
+        <a href="html/60.html" class="main__card" data-price="20" data-stock="1" data-title="Tale for the night"
+            data-id="62" data-type="other">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/other/3.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title"> Tale for the night </div>
+                <div class="main__card-description"> Fall asleep with us </div>
+                <div class="main__card-price"> $20 </div>
+            </div>
+        </a>
+        <a href="html/61.html" class="main__card" data-price="150" data-stock="1" data-title="Just do it" data-id="63"
+            data-type="other">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/other/4.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title"> Just do it </div>
+                <div class="main__card-description"> Personal motivation </div>
+                <div class="main__card-price"> $150 </div>
+            </div>
+        </a>
+        <a href="html/62.html" class="main__card" data-price="20000" data-stock="1" data-title="Purification"
+            data-id="64" data-type="other">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/other/5.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title"> Purification </div>
+                <div class="main__card-description"> Burn everything </div>
+                <div class="main__card-price"> $20 000 </div>
+            </div>
+        </a>
+        <a href="html/63.html" class="main__card" data-price="350" data-stock="1" data-title="Skinner custom"
+            data-id="65" data-type="other">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/other/6.png" alt="">
+            </div>
+            <div>
+                <div class="main__card-title"> Skinner custom </div>
+                <div class="main__card-description"> Create your own style </div>
+                <div class="main__card-price"> $350 </div>
+            </div>
+        </a>
+        <a href="html/64.html" class="main__card" data-price="200" data-stock="1" data-title="Skinner Original"
+            data-id="66" data-type="other">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/other/7.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title"> Skinner Original </div>
+                <div class="main__card-description"> Skinner </div>
+                <div class="main__card-price"> $200 </div>
+            </div>
+        </a>
+        <a href="html/65.html" class="main__card" data-price="200" data-stock="1" data-title="Skinner Blank"
+            data-id="67" data-type="other">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/other/8.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title"> Skinner Blank </div>
+                <div class="main__card-description"> White Skinner </div>
+                <div class="main__card-price"> $200 </div>
+            </div>
+        </a>
+        <a href="html/66.html" class="main__card" data-price="200" data-stock="1" data-title="Skinner Black"
+            data-id="68" data-type="other">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/other/9.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title"> Skinner Black </div>
+                <div class="main__card-description"> Black Skinner </div>
+                <div class="main__card-price"> $200 </div>
+            </div>
+        </a>
+        <a href="html/67.html" class="main__card" data-price="220" data-stock="1" data-title="Skinner Colored"
+            data-id="69" data-type="other">
+            <div class="main__card-photo">
+                <img class="main__card-photo-img" src="images/items/other/10.jpeg" alt="">
+            </div>
+            <div>
+                <div class="main__card-title"> Skinner Colored </div>
+                <div class="main__card-description"> Colored Skinner </div>
+                <div class="main__card-price"> $220 </div>
+            </div>
+        </a>
+
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer__info">
+                <a href="html/size.html" class="footer__info-size">Size selection</a>
+                <a href="html/feedback.html" class="footer__info-feedback">Feedback</a>
+                <a href="html/faq.html" class="footer__info-faq">FAQ</a>
+            </div>
+            <div class="footer__social">
+                <div class="footer__social-inst">
+                    <div class="inst"></div>
+                </div>
+                <div class="footer__social-yt">
+                    <div class="yt"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
